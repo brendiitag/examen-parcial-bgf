@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a id="actualizar-calificaciones" class= "btn btn-warnin">Actualizar calificaciones</a>
+        <div> class="resultado-calificaciones" </div>
+        $document.ready(function(){
+        $("#actualizar-calificaciones").click(funcion(){
+        $.ajax({,
+        url:"actualizar-calificaciones",
+        method:'put',
+        data:{
+        id=1,
+        nombre='Petra',
+        calificacion=5.8
+        }
+        sucess:funcion(respuesta){
+        $("#resultado-calificaciones").html(respuesta);
+        }
+        )};
+        )};
+        )};
+             $.ajax({,
+        url:"actualizar-calificaciones",
+        method:'put',
+        data:{
+        id=2,
+        nombre='Jose',
+        calificacion=7.4
+        }
+        sucess:funcion(respuesta){
+        $("#resultado-calificaciones").html(respuesta);
+        }
+        )};
+        )};
+        )};
+             $.ajax({,
+        url:"actualizar-calificaciones",
+        method:'put',
+        data:{
+        id=3,
+        nombre='Roberta',
+        calificacion=8.6
+        }
+        sucess:funcion(respuesta){
+        $("#resultado-calificaciones").html(respuesta);
+        }
+        )};
+        )};
+        )};
+        
+        <div>TODO write content</div>
+    </body>
+</html>
